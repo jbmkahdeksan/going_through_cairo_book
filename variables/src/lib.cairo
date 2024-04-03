@@ -5,4 +5,8 @@ fn main() {
     x = 6;
     let y = x * ONE_HOUR_IN_SECONDS;
     println!("{} hours have {}", x, y);
+    {
+	let y = y / 60;
+        println!("And also have {} minutes", y);
+    }
 }
